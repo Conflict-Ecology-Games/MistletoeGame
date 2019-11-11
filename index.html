@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Mistletoe Game</title>
+    <link href="trial.css" rel="stylesheet">
+    <script src="user.js"></script>
+  </head>
+  <body id="index">
+    
+    <img class="arrowleft" src="images/Intro Images/LeafLeft.jpeg" width="200"></a>
+	<img class="arrowright" src="images/Intro Images/LeafRight.jpg" width="200"></a>
+    
+    <a href="consent.html"><h1><center>The Leaf Game!</center></h1></a>
+	<a href="consent.html"><h1><center>Play a game for science!</center></h1></a>
+    
+    <p>
+	<p>
+	<center>	
+		We are studying parasitic plants called Mistletoe.
+    <p> 
+		Mistletoe attach to a host plant and extract water and nutrients from the host in order to survive!
+		
+	<p>
+		Australia has many species of mistletoe. What is unusual is the number of mistletoe that appear to look like their host. We are investigating why this might be.
+	<p>	
+		In this game you play as a hungry possum that sees a leaf and must decide which group of leaves it belongs to.
+	<p>
+		The data provided by everybody who plays this game will then be used to assess how Mistletoe's visual similarity to it's host plant relates to the presence of defensive chemicals.
+ 
+      
+    <!-- <p class="important">You will be shown pairs of leaves, click the <span class="label">Same</span> button or press the <span class="label">S</span>-key if you think the two leaves shown are from the same plant species or click the <span class="label">Different</span> button or press the <span class="label">D</span>-key if you think the two leaves shown are from different species.
+      Hurry, you don't have long to decide!
+     
+      
+    <p> -->
+   
+    <p>
+    <a href="consent.html" class="play button">Okay, Let's Play</a>
+    </center>  
+	  
+  </body>
+
+  <script>
+    // If the consent form has already been accepted, provide a button
+    // to explicitly display the consent form because now the Play
+    // button goes straight to the trial
+    if (HasUserId()) {
+        var cb = document.getElementById("consent");
+        cb.style.display = "inline-block";
+        cb.addEventListener("click", (e) => {
+            ClearUserId();
+            return true;
+        }, false);
+    }
+    </script>
+</html>

@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Mistletoe Game</title>
+    <link href="trial.css" rel="stylesheet">
+    <script src="photo-list.js"></script>
+    <script src="photos.js"></script>
+    <script src="logger.js"></script>
+    <script src="user.js"></script>
+    <script src="trial.js"></script>
+    
+  </head>
+  <body id="trial">
+
+    <div class="imgbox" >
+      <div class="holder">
+        <img id="sample" class="sample" src="images2/Prep Images/Square1.jpg">
+		<img id="sample2" class="sample2" src="images2/Prep Images/Square2.jpg">
+		<img id="sample3" class="sample3" src="images2/Prep Images/Square3.jpg">
+		<img id="sample4" class="sample4" src="images2/Prep Images/Center.jpg">
+		<img id="sample5" class="sample5" src="images2/Prep Images/Star1.jpg">
+		<img id="sample6" class="sample6" src="images2/Prep Images/Star2.jpg">
+		<img id="sample7" class="sample7" src="images2/Prep Images/Star3.jpg">
+      </div>
+
+      <div class="controlpanel">
+        <a id="Left" class="button" style="background-color:#297900">&larr; Left Group</a>
+        <div class="timer"><span id="time">0</span></div>
+        <a id="Right" class="button"> Right Group &rarr;</a>
+      </div>
+    </div>
+
+    <!-- ==================================================================== -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <script>
+      InitFirebase();
+
+      window.onload = function(e) {
+          StartTrial();
+      }
+    </script>
+    <!-- ==================================================================== -->
+    
+  </body>
+
+  <script>
+  </script>
+</html>
