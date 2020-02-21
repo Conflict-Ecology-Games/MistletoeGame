@@ -64,6 +64,7 @@ a.button:hover{
 /* -------------- Front (and other) page --------------- #e7fbeb*/
 body#index, body#start, body#finish {background: black; color: lightgrey; font-size:120% }
 body#index { max-width: 53em; margin: auto }
+body#start { max-width: 53em; margin: auto }
 a.play { display:inline-block; font-size: 150%; clear:left; padding: .5em; }
 /* a.consent { display:none; clear:left; padding: .8em; } dont think i need this because i removed the button */
 a.play, a.consent { color: white /*#e7fbeb*/ }

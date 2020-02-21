@@ -81,6 +81,7 @@ function LoadPhoto(url) {
     img.src = url;
 }
 
+
 function LoadPhoto3(url) { //NEW FUNCTION SAME AS LoadPhoto BUT FOR A DIFF LEAF
     var img3 = new Image;
     img3.onload = function () {
@@ -335,7 +336,7 @@ function StartTrial(dryRun) {
     // Get the data logger
     logger = GetLogger(dryRun);
     // Is this the user's first attempt?
-    const noob = new URLSearchParams(window.location.search).get('noob');
+    const noob = new URLSearchParams(window.location.search).get('first');
     logger.logUserSession(noob == "T", window.screen.width, window.screen.height, window.devicePixelRatio, navigator.userAgent);
     
     // Setup the photos to be displayed, and show the first one

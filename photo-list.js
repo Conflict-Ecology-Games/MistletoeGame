@@ -156,7 +156,7 @@ G23 = alternateArrays(G23M,G23H)
 G24 = alternateArrays(G24M,G24H)
 G25 = alternateArrays(G25M,G25H)
 
-photoTimeout = 20000;
+photoTimeout = 100000;
 // Number of photos to show in a sinle trial
 numPhotos = 11;
 // List of candidate photos. Each photo has a URL, a weight
