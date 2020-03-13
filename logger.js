@@ -30,10 +30,10 @@ class DataLogger {
         this._log({type: "session",
                    userId: this.uid,
                    firstTime: noob,
-                   screenWidth: screenWidth,
-                   screenheight: screenheight,
-                   devicePixelRatio: devicePixelRatio,
-                   userAgent: userAgent});
+                   screenWidth: "Not Collected",
+                   screenheight: "Not Collected",
+                   devicePixelRatio: "Not Collected",
+                   userAgent: "Not Collected"});
     }
     
     // Save the user's classification of an image
